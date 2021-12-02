@@ -62,6 +62,9 @@ const _handlePasswordChange = password => {
   <br>
   
   
+  **2. P2 회원가입**
+  
+  
   ![회원가입](회원가입.PNG)
   
   
@@ -116,6 +119,10 @@ const _handlePasswordChange = password => {
   - 회원가입 버튼 클릭시 Firebase에 데이터 전송
   - 스택 네비게이션을 통해 회원가입 시에 메인 화면으로 이동
 
+  
+  <br>
+    **3. P3 펀딩 채팅방 리스트**
+    
   
   
   
