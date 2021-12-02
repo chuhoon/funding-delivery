@@ -129,9 +129,9 @@ const _handlePasswordChange = password => {
   ![펀딩채팅방](펀딩채팅방.PNG)
   - <ScrollView> 라이브러리를 통해 화면 스크롤 가능하게끔 구현
   - 데이터 베이스에서 값 가져와 채널의 방의 이름, 결제인원, 식사 장소, 마감 시간, 방 생성 시간을 리스트에 보여줌
-    <br>    
+  <br>
         
-    
+        
   ```
   const getDateOrTime = ts => {
     const now = moment().startOf('day');
@@ -189,7 +189,7 @@ const _handlePasswordChange = password => {
   - 탭 네비게이션을 통해 프로필 버튼을 누르면 프로필로 이동
   - 추가 버튼을 누르면 채팅 방 만들기 컴포넌트로 넘김
   - Navigation.replace를 통해 뒤로가기 버튼을 누르면 전 페이지로 이동
-                
+<br> 
  
         
 **4. P4 펀딩채팅방**
