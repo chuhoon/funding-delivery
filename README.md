@@ -51,4 +51,16 @@ _handleEmailChange 이메일 Input 값 속에 onChangeText로 들어간다.
   로그인 버튼을 눌렀을 경우 옳바른 정보시에 로그인이 되고
   알맞지 않았을 경우 로그인 오류 에러메세지를 출력한다.
   
+  ```
+  <Button
+          title="아이디/비밀번호를 모르겠어요!"
+          onPress={() => navigation.navigate('IdPw')}
+          containerStyle={{ marginTop: 0, backgroundColor: 'transparent' }}
+          textStyle={{ color: theme.btnTextLink, fontSize: 12 }}
+        />
+  ```
+  
+  비밀번호 찾기 기능은 버튼만 만들어 놓고 따로 네비게이션을 구성하지는 않았다.
+  
+  
 
