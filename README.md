@@ -110,7 +110,7 @@ const _handlePasswordChange = password => {
   <br>
 
   
-  ![파이어베이스 데이터](파이어베이스 데이터.png)
+  ![파이어베이스](파이어베이스.png)
   이 외에 기능
   - 프로필 사진 설정 가능
   - 회원가입 버튼 클릭시 Firebase에 데이터 전송
