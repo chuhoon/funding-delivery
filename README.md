@@ -63,4 +63,60 @@ _handleEmailChange 이메일 Input 값 속에 onChangeText로 들어간다.
   비밀번호 찾기 기능은 버튼만 만들어 놓고 따로 네비게이션을 구성하지는 않았다.
   
   
+  ![회원가입](회원가입.PNG)
+  
+  ```
+  useEffect(() => {
+        setDisabled(
+            !(name && email && password && passwordConfirm && !errorMessage)
+        );
+    }, [email, name, passwordConfirm, password, errorMessage]);
+  
+  useEffect(() => {
+        if (refDidMount.current) {
+            let error = '';
+            if (!name) {
+                error = '이름을 입력하세요.';
+            } else if (!email) {
+                error = '이메일을 입력하세요.';
+            } else if (!validateEmail(email)) {
+                error = '이메일을 확인하세요.';
+            } else if (password.length < 6) {
+                error = '비밀번호는 최소 6자리 이상이여야합니다.';
+            } else if (password !== passwordConfirm) {
+                error = '비밀번호가 일치하지 않습니다.';
+            } else {
+                error = '';
+            }
+            setErrorMessage(error);
+        } else {
+            refDidMount.current = true;
+        }
+    }, [email, name, passwordConfirm, password]);
+  ```
+  
+
+  이름을 입력하지 않았을 때 ‘이름을 입력하세요.’ 출력, 이메일 양식과 맞지 않을 경우 ‘이메일을 확인하세요’ 출력, 이메일을 입력하지 않았을 때 ‘이메일을 확인하세요 출력’, 비밀번호를 6   자리 미만으로 입력했을 때 ‘비밀번호는 최소 6자리 이상이여야합니다.’ 출력, 비밀번호가 일치하지 않을 때, ‘비밀번호가 일치하지 않습니다.’ 에러메세지 출력
+  이미지 카메라 버튼을 통해 자신을 대표하는 프로필 이미지 설정이 가능하다.
+  
+  ```
+  <Button title="회원가입" onPress={_handleSignupBtnPress} disabled={disabled} />
+  ```
+  - useEffect 를 사용해 name && email && password && password Confirm이 입력되지 않았을 때 버튼 비활성화
+  - KeyboardAwareScrollView를 통해 텍스트 입력 시에 입력창이 같이 올라가게 구현
+
+
+  이 외에 기능
+  - 프로필 사진 설정 가능
+  - 회원가입 버튼 클릭시 Firebase에 데이터 전송
+  - 스택 네비게이션을 통해 회원가입 시에 메인 화면으로 이동
+
+  
+  
+  
+  
+  
+  
+  
+  
 
