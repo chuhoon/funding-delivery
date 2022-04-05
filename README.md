@@ -1,5 +1,7 @@
 # funding-delivery
-RN expo 개발 연습(펀딩 시스템을 도입한 배달)
+React-Native 캡스톤 디자인 앱 개발
+
+- [앱 구동영상](https://blog.naver.com/khchu1220/222675793763)
 <br>
 <br>
 **1. P1 로그인**
