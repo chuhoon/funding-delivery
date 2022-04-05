@@ -4,8 +4,8 @@ React-Native 캡스톤 디자인 앱 개발
 - [앱 구동영상](https://blog.naver.com/khchu1220/222675793763)
 <br>
 <br>
-**1. P1 로그인**
 
+**1. P1 로그인**
 
 ![로그인](로그인.PNG)
 
